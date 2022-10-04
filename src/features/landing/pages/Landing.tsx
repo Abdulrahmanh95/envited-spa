@@ -1,6 +1,10 @@
+import HeroSection from '../components/HeroSection';
+
 function Landing() {
     return (
-        <h1>Landing page</h1>
+      <div className="landing h-screen max-h-screen">
+          <HeroSection />
+      </div>
     );
 }
 

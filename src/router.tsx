@@ -21,5 +21,7 @@ const router = createBrowserRouter([
 ]);
 
 export default function Router() {
-    return <RouterProvider router={router} />
+    return <React.Suspense fallback={<span>Loading...</span>}>
+        <RouterProvider router={router} />
+    </React.Suspense>
 }
